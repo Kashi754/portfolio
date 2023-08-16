@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Rubik&display=swap');
+
+html {
+    background-image: url(./Images/vecteezy_data-technology-and-abstract-background-with-connecting-line_22507970_834.jpg);
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(223, 223, 223);
+}
+
+p {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(223, 223, 223);
+}
+
+.fa-solid,
+.fa-brands {
+    color: rgb(223, 223, 223);
+}
+
+main {
+    display: grid;
+    grid-template-areas: "none about skills"
+                         "none about projects";
+    grid-template-columns: minmax(0, 15vw) minmax(30rem, 1fr) minmax(30rem, 1fr);
+    grid-template-rows: minmax(25vh, min-content) minmax(min-content, 75vh);
+    background-color: rgba(0, 0, 0, 0.123)
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 2rem;
+}
+
+.about_me {
+    margin-top: 10vh;
+    padding: 2rem 5%;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact a {
+    font-size: 2rem;
+    color: rgb(1, 10, 48);
+    padding: .75rem 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(240, 240, 240, 0.548);
+    box-shadow: 0 0 10px 5px black;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px 5px black;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.image_container {
+    width: 25%;
+    margin-right: 2rem;
+    min-width: 7rem;
+}
+
+.image_container img {
+    width: 100%;
+    height: auto;
+}
+
+.personal_info {
+    grid-area: about;
+    border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+    border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.skills {
+    grid-area: skills;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.skills h2 {
+    padding-left: 2rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.skills_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.skills_container > * {
+    font-size: 2rem;
+    width: 6rem;
+    margin-bottom: .75em;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.projects h2 {
+    padding-left: 2rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.accordion {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 1rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.accordion_trigger {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.accordion_trigger .fa-solid {
+    font-size: 2rem;
+    width: 4rem;
+}
+
+.project_image_container {
+    width: 60%;
+    margin-right: 2rem;
+}
+
+.project_image_container img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image_container,
+.project_image_container {
+    box-shadow: 0 0 10px 5px black;
+}

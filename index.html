@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link  href="styles.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/a501f3f69b.js" crossorigin="anonymous"></script>
     <title>Terry Petersen's Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <!--Add Link-->
-            <a href="#">Contact</a>
-        </nav>
-    </header>
     <main>
         <section class="personal_info">
             <div class="banner">
@@ -30,6 +26,12 @@
                     In my free time I like to watch youtube videos about math, science, and computer science, as well as spending time in my wood shop.
                 </p>
             </div>
+            <div class="contact">
+                <a href="#">Contact</a>
+            </div>
+            
+            
+
         </section>
         <section class="skills">
             <h2>Skills</h2>
@@ -50,15 +52,20 @@
             </div>
         </section>
         <section class="projects">
-            <div class="message_generator">
-                <i class="fa-solid fa-circle-plus"></i>
+            <h2>Projects</h2>
+            <div class="accordion message_generator">
+                <div class="accordion_trigger">
+                    <i class="fa-solid fa-circle-plus"></i>
                 <i class="fa-solid fa-circle-minus"></i>
                 <h3>Random Message Generator</h3>
-                <div class="description_for_generator">
-                    <p>A small javascript program to generate random messages when ran.</p>
+                </div>
+                <div class="description for_generator">
                     <div class="project_image_container">
-                        <a href="https://github.com/Kashi754/random_message_generator"><img src="./Images/message_generator.jpg" alt="image of message generator code"></a>
+                        <a href="https://github.com/Kashi754/random_message_generator" target="_blank"><img src="./Images/message_generator.jpg" alt=""></a>
                     </div>
+                    <p>A small javascript program to generate random messages when ran.</p>
+                    
+                    
                 </div>  
             </div>
         </section>
