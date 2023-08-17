@@ -126,7 +126,7 @@ h3 {
 
 
 .image_container {
-    width: 25%;
+    max-width: 25%;
     margin-right: 2rem;
     min-width: 7rem;
 }
@@ -275,6 +275,15 @@ h3 {
     .projects {
         justify-content: flex-start;
     }
+
+    .banner {
+        justify-content: center;
+    }
+
+    .image_container {
+        max-width: 300px;
+    }
+
 }
 
 @media only screen and (max-width: 464px){
