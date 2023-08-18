@@ -84,8 +84,11 @@ main {
 }
 
 .about_me {
-    margin-top: 10vh;
     padding: 2rem 5%;
+}
+
+.about_me h2 {
+    margin-bottom: 1rem;
 }
 
 .contact {
@@ -96,11 +99,11 @@ main {
 
 .contact a {
     font-size: 2rem;
-    color: rgb(1, 10, 48);
+    color: rgb(0, 0, 0);
     padding: .75rem 1rem;
     border: 1px solid black;
     background-color: rgba(240, 240, 240, 0.377);
-    box-shadow: 0 0 10px 5px black;
+    box-shadow: 0 0 10px black;
 }
 
 .contact a:hover {
@@ -197,7 +200,6 @@ h3 {
     grid-area: projects;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 .projects h2 {
@@ -266,8 +268,8 @@ h3 {
 @media only screen and (max-width: 640px){
     main {
         grid-template-areas: "about"
-                             "skills"
-                             "projects";
+                             "projects"
+                             "skills";
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content min-content;
     }
@@ -282,6 +284,30 @@ h3 {
 
     .image_container {
         max-width: 300px;
+    }
+
+    .about_me {
+        text-align: center;
+    }
+
+    .contact {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
     }
 
 }
