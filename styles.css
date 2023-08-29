@@ -26,8 +26,6 @@ p {
     p {
         line-height: 1.4;
         font-size: 1.25rem;
-        font-family: 'Rubik', sans-serif;
-        color: rgb(223, 223, 223);
     }
 }
 
@@ -236,14 +234,20 @@ h3 {
     display: none;
 }
 
+.description_container {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}
+
 .description_container img {
-    margin-right: 2rem;
     width: 100%;
 }
 
 .description_container p {
     display: block;
-    margin-left: 2rem;
+    font-size: calc(0.75rem + 0.5vw);
 }
 
 .description {
@@ -253,11 +257,6 @@ h3 {
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s ease-out;
-}
-
-.description_container {
-    padding: 1.5rem;
-    display: flex;
 }
 
 .image_container,
@@ -318,7 +317,14 @@ h3 {
     }
 
     .description_container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .description_container p {
+        display: block;
+        font-size: calc(1rem + 0.5vw);
+        text-align: center;
     }
 }
 
